@@ -1,0 +1,10 @@
+Cadastro dos Sistemas
+
+Todo os sistemas que terão seus perfis de acesso gerenciados pela Matriz SoD vão
+precisar ser cadastrados previamente.
+
+Cada sistema deve ter as seguintes informações
+
+Código do Sistema (15 caracteres)
+Nome do Sistema (20 caracteres)
+O campo Código do Sistema deve ser a chave primária desta tabela
