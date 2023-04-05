@@ -1,0 +1,19 @@
+Atividades:
+
+1 - Ler o enunciado todo e criar um estudo de caso:
+
+    Criar um estudo de caso será fazer de forma simples um desenho da aplicação, com base nos nossos modelos Sistema, Perfil e Matriz o que cada um vai precisar ter
+
+2 - Pesquisar formas de utilizar front-end com python:
+
+    Em ideia pesquisar as formas de  trabalhar com interface atraves do python como estudo do projeto
+
+3 - Estudar Python e Model View Controller
+
+    'https://www.pythontutorial.net/tkinter/tkinter-mvc/'
+
+    Está em ingles mas da para ter uma base para entender, porém procurar mais conteudo:
+
+4 - Comunicação de python com planilhas (leitura, escrita e alteração)
+
+    A "base de dados" utilizada vai ser planilha, então precisamos entender como vai ser a comunicação para salvar os dados na planilha e manipular os mesmos
