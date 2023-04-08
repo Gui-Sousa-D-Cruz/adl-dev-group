@@ -28,12 +28,12 @@ class Sistema:
         print('Servico não encontrado')
         return None
 
-
-
 # # Instancia um objeto da classe Sistema
 sistema = Sistema('52452652', 'Servico Teste 1')
 #
 # # Chama o método set_servico() para salvar o objeto na planilha do Excel
 sistema.set_servico()
+
+
 
 
