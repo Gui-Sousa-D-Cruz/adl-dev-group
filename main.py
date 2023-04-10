@@ -1,4 +1,4 @@
-from model.sistema import Sistema
+from controller.sistema import Sistema
 
 sist = Sistema('55646421688')
 existe = sist.get_sistema()
