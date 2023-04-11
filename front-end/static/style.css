@@ -1,0 +1,58 @@
+html,
+body {
+    height: 100%;
+}
+
+.bg {
+    display: flex;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background: url(../static/bg-login.jpg) center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    backdrop-filter: brightness(0.3);
+}
+
+.form-signin {
+    max-width: 330px;
+    padding: 15px;
+}
+
+.form-signin .form-floating:focus-within {
+    z-index: 2;
+}
+
+.form-signin input[type="email"] {
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.form-signin input[type="password"] {
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+.box-login {
+    background: #000000;
+    padding: 6%;
+    border-radius: 5%;
+}
+.box-login h1{
+    color: #fff;
+}
+
+/* Tela cadastro*/
+.lateral{
+    background: #6b6a6a
+}
+.lateral li > a{
+    border-bottom: 1px solid #fff;
+    color: #fff;
+}
+.box-cadastro {
+    background: #ddd;
+    padding: 3%;
+}

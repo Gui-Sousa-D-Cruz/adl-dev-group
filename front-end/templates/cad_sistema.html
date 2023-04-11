@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <title>Página Cadastro de Sistema</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+        <!-- Flexbox -->
+        <link href="{{ url_for('static', filename='flexbox.css')}}" rel="stylesheet">
+    
+        <!-- Bootstrap -->
+        <link href="{{ url_for('static', filename='bootstrap.min.css')}}" rel="stylesheet">
+    
+        <!-- Style -->
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
+    </head>
+    <body>
+        <section>
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">Logo</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="/sistemas">Início</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/cad_sistema">Cadastrar</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Usuários</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Sair</a>
+                            </li>
+                        </ul>
+                        <!-- <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form> -->
+                    </div>
+                </div>
+            </nav>
+        </section>
+
+        <section class="container-fluid d-flex">
+            <div class="col-md-2 lateral nav flex-column nav-pills me-3-" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" id="cad_novo-tab" data-bs-toggle="pill" data-bs-target="#cad_novo"
+                    type="button" role="tab" aria-controls="cad_novo" aria-selected="true" href="#">Novo</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" id="cad_consulta-tab" data-bs-toggle="pill" data-bs-target="#cad_consulta"
+                    type="button" role="tab" aria-controls="cad_consulta" aria-selected="true" href="#">Consulta</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" id="cad-atualizacao-tab" data-bs-toggle="pill" data-bs-target="#cad-atualizacao"
+                            type="button" role="tab" aria-controls="cad-atualizacao" aria-selected="false">Atualizar</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" id="cad-excluir-tab" data-bs-toggle="pill" data-bs-target="#cad-excluir"
+                            type="button" role="tab" aria-controls="cad-excluir" aria-selected="false">Excluir</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-md-10 box-cadastro">
+                <div class="d-flex- align-items-start">
+                    <div class="tab-content" id="v-pills-tabContent">
+                        <div class="tab-pane fade show active" id="cad_novo" role="tabpanel" aria-labelledby="cad_novo-tab"
+                            tabindex="0">
+                            <form class="form-horizontal">
+                                <fieldset>
+                            
+                                    <!-- Form Name -->
+                                    <legend>Cadastro de Sistema</legend>
+                            
+                                    <!-- Text input-->
+                                    <div class="form-group">
+                                        <!-- <label class="col-md-4 control-label" for="codigo"></label> -->
+                                        <div class="col-md-5">
+                                            <input id="codigo" name="codigo" type="text" placeholder="Código" class="form-control input-md"
+                                                required="" minlength="15">
+                                        </div>
+                                    </div>
+                            
+                                    <!-- Text input-->
+                                    <div class="form-group">
+                                        <!-- <label class="col-md-4 control-label" for="nome_sistema"></label> -->
+                                        <div class="col-md-8 pt-3">
+                                            <input id="nome_sistema" name="nome_sistema" type="text" placeholder="Nome do sistema"
+                                                class="form-control input-md" required="">
+                                        </div>
+                                    </div>
+                            
+                                    <!-- Button -->
+                                    <div class="form-group">
+                                        <label class="col-md-5 control-label" for="criar"></label>
+                                        <div class="col-md-5">
+                                            <a id="criar" name="criar" class="btn btn-primary">Criar cadastro</a>
+                                        </div>
+                                    </div>
+                            
+                                </fieldset>
+                            </form>
+                        </div>
+
+                        <div class="tab-pane fade" id="cad_consulta" role="tabpanel" aria-labelledby="cad_consulta-tab"
+                            tabindex="0">
+                            <form class="form-horizontal">
+                                <fieldset>
+                            
+                                    <!-- Form Name -->
+                                    <legend>Consulta de cadastro</legend>
+                                    <div class="form-group">
+                                        <!-- <label class="col-md-4 control-label" for="searchinput">Search Input</label>-->
+                                        <div class="col-md-4"> 
+                                            <input id="searchinput" name="searchinput" type="search" placeholder="Digite o código"
+                                                class="form-control input-md">
+                                        </div>
+
+                                        <div class="col-md-5 pt-3">
+                                            <a id="buscar" name="buscar" class="btn btn-primary">Buscar</a>
+                                        </div>
+                                    </div>
+
+                                    
+                                </fieldset>
+                            </form>
+                        </div>
+
+                        <div class="tab-pane fade" id="cad-atualizacao" role="tabpanel" aria-labelledby="cad-atualizacao-tab"
+                            tabindex="0">
+
+                            <form class="form-horizontal">
+                                <fieldset>
+                            
+                                    <!-- Form Name -->
+                                    <legend>Atualização de cadastro</legend>
+                                    <div class="form-group">
+                                        <input id="searchinput" name="searchinput" type="search" placeholder="Digite o código"
+                                            class="form-control input-md">
+
+                                        <input id="buscacad" name="searchinput" type="search" placeholder="Digite o novo nome" class="form-control input-md mt-3">
+                                    </div>
+                            
+                                    <div class="col-md-5 pt-3">
+                                        <a id="alterar" name="alterar" class="btn btn-primary">Alterar</a>
+                                    </div>                           
+                            
+                                </fieldset>
+                            </form>
+
+                        </div>
+
+                        <div class="tab-pane fade" id="cad-excluir" role="tabpanel" aria-labelledby="cad-excluir-tab" tabindex="0">
+
+                            <form class="form-horizontal">
+                                <fieldset>
+                            
+                                    <!-- Form Name -->
+                                    <legend>Excluir cadastro</legend>
+                                    <div class="form-group">
+                                        <input id="searchinput" name="searchinput" type="search" placeholder="Digite o código"
+                                            class="form-control input-md">
+                                    </div>
+                            
+                                    <div class="col-md-5 pt-3">
+                                        <a id="excluir" name="excluir" class="btn btn-primary">Excluir</a>
+                                    </div>
+                            
+                                </fieldset>
+                            </form>
+                        </div>                     
+                            
+                        
+                    </div>
+                </div>
+            </div>
+            
+        </section> 
+        
+        <section>
+            <div class="container pt-4">
+                <h1 class="text-center">Sistemas cadastrados</h1>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Código</th>
+                            <th scope="col">Nome</th>
+                            <th scope="col">Título 2</th>
+                            <th scope="col">Título 3</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <th scope="row">efrvr2wt</th>
+                            <td>Sistema 01</td>
+                            <td>Lorem ipsum</td>
+                            <td>Lorem ipsum</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">2414535</th>
+                            <td>Sistema 02</td>
+                            <td>Lorem ipsum</td>
+                            <td>Lorem ipsum</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">f4524tt2</th>
+                            <td >Sistema 03</td>
+                            <td>Lorem ipsum</td>
+                            <td>Lorem ipsum</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </section>
+
+    </body>
+    <!-- Bootstrap js -->
+    <script src="{{ url_for('static', filename='bootstrap.min.js')}}"></script>
+</html>

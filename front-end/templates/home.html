@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <title>Página Login teste</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Flexbox -->
+        <link href="{{ url_for('static', filename='flexbox.css')}}" rel="stylesheet">
+
+        <!-- Bootstrap -->
+        <link href="{{ url_for('static', filename='bootstrap.min.css')}}" rel="stylesheet">
+
+        <!-- Style -->
+        <link rel="stylesheet"  href="{{ url_for('static', filename='style.css')}}">
+    </head>
+    <body class="bg">
+        <main class="form-signin w-100 m-auto">
+            <form class="box-login">
+                <!--<img class="mb-4" src="" alt="" width="72" height="57">-->
+                <h1 class="h3 mb-3 fw-normal text-center">Bem vindo</h1>
+            
+                <div class="form-floating">
+                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                    <label for="floatingInput">E-mail</label>
+                </div>
+                <div class="form-floating">
+                    <input type="password" class="form-control" id="floatingPassword" placeholder="Password" minlength="4" maxlength="6">
+                    <label for="floatingPassword" >Senha</label>
+                </div>
+            
+                <div class="checkbox mb-3">
+                    <label>
+                        <input type="checkbox" value="remember-me"> Esqueci a senha
+                    </label>
+                </div>
+                <a href="/sistemas" class="w-100 btn btn-lg btn-primary" type="submit">Entrar</a>
+            
+            </form>
+        </main>
+    </body>
+
+    <!-- Bootstrap js -->
+    <script src="{{ url_for('static', filename='bootstrap.min.js')}}"></script>
+</html>

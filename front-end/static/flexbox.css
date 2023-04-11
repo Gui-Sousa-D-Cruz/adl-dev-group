@@ -1,0 +1,351 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Início Configuração flexbox */
+
+/* Display */
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.flex-item-1 {
+    flex: 1;
+}
+
+/* Flex Direction */
+.row {
+    flex-direction: row;
+}
+
+.row-reverse {
+    flex-direction: row-reverse;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.column-reverse {
+    flex-direction: column-reverse;
+}
+
+/* Flex Wrap */
+.nowrap {
+    flex-wrap: nowrap;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.wrap-reverse {
+    flex-wrap: wrap-reverse;
+}
+
+/* Flex Flow */
+.row-nowrap {
+    flex-flow: row nowrap;
+}
+
+.column-nowrap {
+    flex-flow: column nowrap;
+}
+
+.row-wrap {
+    flex-flow: row wrap;
+}
+
+/* Justify Content */
+.flex-start {
+    justify-content: flex-start;
+}
+
+.flex-end {
+    justify-content: flex-end;
+}
+
+.center {
+    justify-content: center;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.space-around {
+    justify-content: space-around;
+}
+
+/* Align items */
+.stretch {
+    align-items: stretch;
+}
+
+.flex-start {
+    align-items: flex-start;
+}
+
+.flex-end {
+    align-items: flex-end;
+}
+
+.center {
+    align-items: center;
+}
+
+.baseline {
+    align-items: baseline;
+}
+
+/* Align Content */
+.stretch {
+	align-content: stretch;
+}
+
+.flex-start {
+	align-content: flex-start;
+}
+
+.flex-end {
+	align-content: flex-end;
+}
+
+.center {
+	align-content: center;
+}
+
+.space-between {
+	align-content: space-between;
+}
+
+.space-around {
+	align-content: space-around;
+}
+
+/* Flex Grow */
+/* Os itens não se expandem para ocupar o container. */
+.grow0 {
+	flex-grow: 0;
+}
+
+/* Os itens se expandem igualmente para ocupar o container. Utilizando apenas o flex-grow, o crescimento é distribuído igualmente antes e depois do conteúdo de cada elemento. (pois por padrão o flex-basis é auto) */
+.grow1 {
+	flex-grow: 1;
+}
+
+/* Os itens se expandem duas vezes mais que aqueles com flex-grow: 1; */
+.grow2 {
+	flex-grow: 2;
+}
+
+/* Flex Basis */
+.basis-auto {
+	flex-grow: 1;
+	flex-basis: auto;
+}
+
+/* O espaço distribuído é 2 vezes maior que o flex-grow: 1; */
+.basis-auto-grow-2 {
+	flex-grow: 2;
+	flex-basis: auto;
+}
+
+/* É o mesmo espaço distribuido que os demais itens com flex-grow: 1; Porém esse espaço inicia após os 60px iniciais */
+.basis-auto-width {
+	flex-grow: 1;
+	flex-basis: auto;
+	width: 60px;
+}
+
+/* Com o flex-grow: 0; nada é distribuído */
+.basis-auto-grow-0 {
+	flex-basis: auto;
+}
+
+/* Flex Shrink */
+.shrink-1 {
+	flex-grow: 1;
+	flex-shrink: 1;
+}
+
+.shrink-3 {
+	flex-grow: 1;
+	flex-shrink: 3;
+}
+
+.shrink-1-basis {
+	flex-grow: 1;
+	flex-shrink: 1;
+	flex-basis: 150px;
+}
+
+.shrink-0-basis {
+	flex-grow: 1;
+	flex-shrink: 0;
+	flex-basis: 150px;
+}
+
+.shrink-3-basis {
+	flex-grow: 1;
+	flex-shrink: 3;
+	flex-basis: 150px;
+}
+
+.flex-wrap {
+	flex-wrap: wrap;
+}
+
+/* Flex */
+
+
+
+.basis-auto {
+	flex: 1 1 auto;
+}
+
+.basis-auto-grow-2 {
+	flex: 2 1 auto;
+}
+
+.basis-auto-width {
+	flex: 1 1 auto;
+	width: 60px;
+}
+
+.basis-auto-grow-0 {
+	flex: 0 1 auto;
+}
+
+/* FLEX BASIS AUTO FIM */
+
+/* FLEX BASIS 0 */
+
+.basis-0 {
+	flex: 1;
+}
+
+/* O tamanho total é de duas vezes dos itens com flex: 1; */
+.basis-0-grow-2 {
+	flex: 2;
+}
+
+.basis-0-width {
+	flex: 1;
+	width: 120px;
+	min-width: 80px;
+}
+
+.basis-0-grow-0 {
+	flex: 0 1 0;
+}
+
+/* FLEX BASIS 0 FIM */
+
+.basis-numero-container {
+	flex-wrap: wrap;
+}
+
+.basis-110 {
+	flex: 0 1 110px;
+}
+
+.basis-300 {
+	flex: 0 1 300px;
+}
+
+.basis-110-porcento {
+	flex: 0 1 calc(25% - 10px);
+}
+
+.basis-110-grow-1 {
+	flex: 1 1 110px;
+}
+
+.basis-600-grow-1 {
+	flex: 1 1 600px;
+}
+
+/* Order */
+.order1 {
+	order: 1;
+}
+
+.order2 {
+	order: 2;
+}
+
+.order3 {
+	order: 3;
+}
+
+.order4 {
+	order: 4;
+}
+
+.order-1 {
+	order: -1;
+}
+
+.flex-grow {
+	flex-grow: 1;
+}
+
+.column {
+	flex-direction: column;
+}
+
+/* Align Self */
+.flex-start {
+	align-self: flex-start;
+}
+
+.flex-end {
+	align-self: flex-end;
+}
+
+.center {
+	align-self: center;
+}
+
+.baseline {
+	align-self: baseline;
+}
+
+.stretch {
+	align-self: stretch;
+}
+
+.align-items {
+	align-items: flex-end;
+}
+
+/*  */
+
+
+.item-filho {
+    background-color: red;
+    width: 400px;
+    height: 100px;
+    border: 1px solid #000;
+    margin: 10px;
+    flex: 1 1 auto;
+    flex-grow: 1;
+    text-align: center;
+    color: #fff;
+
+}
+
+/* Fim Configuração flexbox  */
+
