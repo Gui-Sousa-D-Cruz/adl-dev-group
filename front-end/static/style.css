@@ -56,3 +56,7 @@ body {
     background: #ddd;
     padding: 3%;
 }
+.nav-item a:hover {
+    color: #fff !important;
+    background: #1c0493;
+}

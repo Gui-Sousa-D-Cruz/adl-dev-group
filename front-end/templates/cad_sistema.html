@@ -89,7 +89,7 @@
                                         <!-- <label class="col-md-4 control-label" for="codigo"></label> -->
                                         <div class="col-md-5">
                                             <input id="codigo" name="codigo" type="text" placeholder="Código" class="form-control input-md"
-                                                required="" minlength="15">
+                                                required="" minlength="15" maxlength="15">
                                         </div>
                                     </div>
                             
@@ -103,11 +103,19 @@
                                     </div>
                             
                                     <!-- Button -->
-                                    <div class="form-group">
-                                        <label class="col-md-5 control-label" for="criar"></label>
-                                        <div class="col-md-5">
-                                            <a id="criar" name="criar" class="btn btn-primary">Criar cadastro</a>
+                                    <div class="form-group d-flex mt-2">
+                                        <!-- <label class="col-md-2 control-label" for="criar"></label> -->
+                                        <div class="col-md-1">
+                                            <a id="salvar" name="salvar" class="btn btn-success">Salvar</a>
                                         </div>
+
+                                        <!-- <div class="col-md-1 me-3">
+                                            <a id="cancelar" name="cancelar" class="btn btn-danger">Cancelar</a>
+                                        </div> -->
+
+                                        <!-- <div class="col-md-1">
+                                            <a id="voltar" name="voltar" class="btn btn-primary">Voltar</a>
+                                        </div> -->
                                     </div>
                             
                                 </fieldset>
@@ -175,7 +183,7 @@
                                     </div>
                             
                                     <div class="col-md-5 pt-3">
-                                        <a id="excluir" name="excluir" class="btn btn-primary">Excluir</a>
+                                        <a id="excluir" name="excluir" class="btn btn-danger">Excluir</a>
                                     </div>
                             
                                 </fieldset>
